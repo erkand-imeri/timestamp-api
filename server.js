@@ -22,6 +22,22 @@ app.get('/', function (req, res) {
   
 });
 
+app.get('/:datetime', function(req, res) {
+       var date = req.params.datetime;
+       
+       
+       
+       
+       
+       
+       res.json({
+         unix: date
+       });
+       
+       
+       });
+
+
 app.listen(process.env.PORT || 8080, function () {
   console.log('Example app listening on port 8080!');
 });
