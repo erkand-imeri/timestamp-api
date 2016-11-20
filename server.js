@@ -23,21 +23,32 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:datetime', function(req, res) {
+  
        var date = req.params.datetime;
        
-       if(moment(date,'x').isValid)
+       if(moment(date,'X',true).isValid())
        {
-         console.log("It's Unix timestamp")
-       }
-       else{
-         console.log("Natural timestamp");
-       }
-       
-       
-       
-       res.json({
-         unix: date
+         res.json({
+         unix: moment.unix(date).format('X'),
+      natural: moment.unix(date).format('MMMM D, YYYY')
        });
+       }
+       else if(moment(date,'MMMM D, YYYY',true).isValid())
+       {
+          res.json({
+         unix: moment(date).format('X'),
+      natural: moment(date).format('MMMM D, YYYY')
+       });
+       }
+       else
+       {
+        res.json({
+          unix: null,
+      natural: null
+       });
+       }
+       
+       
        
        
        });
