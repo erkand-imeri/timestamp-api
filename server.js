@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var fs=require('fs');
 var path=require('path');
-
+var moment=require('moment');
 
 
 app.get('/', function (req, res) {
@@ -25,8 +25,13 @@ app.get('/', function (req, res) {
 app.get('/:datetime', function(req, res) {
        var date = req.params.datetime;
        
-       
-       
+       if(moment(date,'x').isValid)
+       {
+         console.log("It's Unix timestamp")
+       }
+       else{
+         console.log("Natural timestamp");
+       }
        
        
        
