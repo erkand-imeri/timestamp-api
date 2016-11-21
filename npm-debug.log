@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'bugs',
+1 verbose cli   'timestamp' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 silly mapToRegistry name timestamp
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'timestamp',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'timestamp',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/timestamp
+9 verbose request uri https://registry.npmjs.org/timestamp/latest
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 9:09:45 PM
+12 verbose request id c995cfe5a7c56c6d
+13 http request GET https://registry.npmjs.org/timestamp/latest
+14 http 200 https://registry.npmjs.org/timestamp/latest
+15 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+15 verbose headers   etag: '"5MTAKT95ZACJZVG05HU28VOQW"',
+15 verbose headers   'content-type': 'application/json',
+15 verbose headers   'content-encoding': 'gzip',
+15 verbose headers   'cache-control': 'max-age=300',
+15 verbose headers   'content-length': '730',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Sun, 20 Nov 2016 21:09:46 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   age: '0',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-lhr6325-LHR',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1479676185.837315,VS0,VE516',
+15 verbose headers   vary: 'Accept-Encoding' }
+16 silly get cb [ 200,
+16 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+16 silly get     etag: '"5MTAKT95ZACJZVG05HU28VOQW"',
+16 silly get     'content-type': 'application/json',
+16 silly get     'content-encoding': 'gzip',
+16 silly get     'cache-control': 'max-age=300',
+16 silly get     'content-length': '730',
+16 silly get     'accept-ranges': 'bytes',
+16 silly get     date: 'Sun, 20 Nov 2016 21:09:46 GMT',
+16 silly get     via: '1.1 varnish',
+16 silly get     age: '0',
+16 silly get     connection: 'keep-alive',
+16 silly get     'x-served-by': 'cache-lhr6325-LHR',
+16 silly get     'x-cache': 'MISS',
+16 silly get     'x-cache-hits': '0',
+16 silly get     'x-timer': 'S1479676185.837315,VS0,VE516',
+16 silly get     vary: 'Accept-Encoding' } ]
+17 verbose get saving timestamp to /home/ubuntu/.npm/registry.npmjs.org/timestamp/latest/.cache.json
+18 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+19 verbose bugs repository git://github.com/dominictarr/timestamp.git
+20 silly bugs url https://github.com/dominictarr/timestamp/issues
+21 verbose stack Error: spawn xdg-open ENOENT
+21 verbose stack     at exports._errnoException (util.js:870:11)
+21 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:178:32)
+21 verbose stack     at onErrorNT (internal/child_process.js:344:16)
+21 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+21 verbose stack     at process._tickCallback (node.js:356:17)
+22 verbose cwd /home/ubuntu/workspace/timestamp
+23 error Linux 4.2.0-c9
+24 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "bugs" "timestamp"
+25 error node v4.4.5
+26 error npm  v2.15.5
+27 error path xdg-open
+28 error code ENOENT
+29 error errno ENOENT
+30 error syscall spawn xdg-open
+31 error enoent spawn xdg-open ENOENT
+31 error enoent This is most likely not a problem with npm itself
+31 error enoent and is related to npm not being able to find a file.
+32 verbose exit [ 1, true ]
