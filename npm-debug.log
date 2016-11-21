@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'bugs',
+1 verbose cli   'timestamp' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 silly mapToRegistry name timestamp
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'timestamp',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'timestamp',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/timestamp
+9 verbose request uri https://registry.npmjs.org/timestamp/latest
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 5:47:16 AM
+12 verbose request id 3ad79cc6e242fde7
+13 verbose etag "5MTAKT95ZACJZVG05HU28VOQW"
+14 http request GET https://registry.npmjs.org/timestamp/latest
+15 http 304 https://registry.npmjs.org/timestamp/latest
+16 verbose headers { date: 'Mon, 21 Nov 2016 05:47:16 GMT',
+16 verbose headers   via: '1.1 varnish',
+16 verbose headers   'cache-control': 'max-age=300',
+16 verbose headers   etag: '"5MTAKT95ZACJZVG05HU28VOQW"',
+16 verbose headers   age: '0',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'x-served-by': 'cache-lhr6332-LHR',
+16 verbose headers   'x-cache': 'MISS',
+16 verbose headers   'x-cache-hits': '0',
+16 verbose headers   'x-timer': 'S1479707236.370695,VS0,VE397',
+16 verbose headers   vary: 'Accept-Encoding' }
+17 silly get cb [ 304,
+17 silly get   { date: 'Mon, 21 Nov 2016 05:47:16 GMT',
+17 silly get     via: '1.1 varnish',
+17 silly get     'cache-control': 'max-age=300',
+17 silly get     etag: '"5MTAKT95ZACJZVG05HU28VOQW"',
+17 silly get     age: '0',
+17 silly get     connection: 'keep-alive',
+17 silly get     'x-served-by': 'cache-lhr6332-LHR',
+17 silly get     'x-cache': 'MISS',
+17 silly get     'x-cache-hits': '0',
+17 silly get     'x-timer': 'S1479707236.370695,VS0,VE397',
+17 silly get     vary: 'Accept-Encoding' } ]
+18 verbose etag https://registry.npmjs.org/timestamp/latest from cache
+19 verbose get saving timestamp to /home/ubuntu/.npm/registry.npmjs.org/timestamp/latest/.cache.json
+20 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+21 verbose bugs repository git://github.com/dominictarr/timestamp.git
+22 silly bugs url https://github.com/dominictarr/timestamp/issues
+23 verbose stack Error: spawn xdg-open ENOENT
+23 verbose stack     at exports._errnoException (util.js:870:11)
+23 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:178:32)
+23 verbose stack     at onErrorNT (internal/child_process.js:344:16)
+23 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+23 verbose stack     at process._tickCallback (node.js:356:17)
+24 verbose cwd /home/ubuntu/workspace/timestamp
+25 error Linux 4.2.0-c9
+26 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "bugs" "timestamp"
+27 error node v4.4.5
+28 error npm  v2.15.5
+29 error path xdg-open
+30 error code ENOENT
+31 error errno ENOENT
+32 error syscall spawn xdg-open
+33 error enoent spawn xdg-open ENOENT
+33 error enoent This is most likely not a problem with npm itself
+33 error enoent and is related to npm not being able to find a file.
+34 verbose exit [ 1, true ]
